@@ -92,7 +92,7 @@ bugreports:
     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
     - Открыть страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    - В цифровом поле "До"/"To" нажать стрелку вниз произвольное количество раз
+    - В цифровом поле "До"/"To" зажать стрелку "вниз", к примеру, до значения "-50"
     expected-result: |
       Значение не должно опускаться ниже нуля
     actual-result: |
