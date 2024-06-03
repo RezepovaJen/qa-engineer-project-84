@@ -52,7 +52,7 @@ bugreports:
 
 bugreports:
   - summary: |
-      Короткое описание ошибки
+      При выборе категории и выборе бренда другой категории отображается весь каталог
     environment: |
     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
