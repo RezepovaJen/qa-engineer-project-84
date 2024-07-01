@@ -1,6 +1,6 @@
 ---
 - summary: |
-    Проверка возможности просмотра содержимого корзины
+    Проверка добавления товара в корзину
   status: pass
 
 - summary: |
@@ -12,7 +12,7 @@
   status: pass
 
 - summary: |
-   Проверка работы фильтра при выборе бренда другой категории товара
+   Проверка сортировки по категории которая не соотвествует бренду
   status: fail
 
 - summary: |
@@ -24,11 +24,11 @@
   status: pass
 
 - summary: |
-   Проверка смены английского языка на русский на странице интернет-магазина
+   Проверка русской локализации
   status: fail
 
 - summary: |
-   Проверка возможности удаления лишнего товара из корзины
+   Проверка удаления товара из корзины
   status: pass
 
 - summary: |
@@ -43,7 +43,6 @@ bugreports:
     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
-    - Открыть страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     - В поисковой строке ввести слова, не имеющие отношения к названию товара, к примеру "Sweet and juicy"
     expected-result: |
       Отображается товар, содержащий в описании указанные слова, к примеру "Mulberry"
@@ -58,7 +57,6 @@ bugreports:
     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
-    - Открыть страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     - Выбрать любую категорию товара, к примеру "beauty"
     - Выбрать любой бренд другой категории товаров, к примеру "Knoll"
     expected-result: |
@@ -74,7 +72,6 @@ bugreports:
     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
-    - Открыть страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     - Выбрать любую категорию, к примеру "fragrances"
     - Выбрать любой бренд из соответствующей категории, к примеру "Dior"
     - Выбрать вариант "без категории"
@@ -91,7 +88,6 @@ bugreports:
     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
-    - Открыть страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     - В цифровом поле "До"/"To" зажать стрелку "вниз", к примеру, до значения "-50"
     expected-result: |
       Значение не должно опускаться ниже нуля
@@ -106,7 +102,6 @@ bugreports:
     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
-    - Открыть страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     - Выбрать любую категорию, к примеру "beauty"
     - Указать цену в поле "До"/"To", к примеру "20"
     - Выбрать вариант "без категории"
@@ -117,13 +112,12 @@ bugreports:
       Решается перезагрузкой страницы
 
 - summary: |
-    Не работает кнопка "Х" в окне заказа
+    Не закрывается окно в окне заказа при клике на "Х"
   environment: |
     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
   steps-to-reproduce: |
-    1. Открыть страницу https://hexlet-products-store.vercel.app/
     2. Добавить любой товар в корзину
     3. Перейти в корзину
     4. Нажать "Оформить заказ" / "Checkout"
@@ -132,3 +126,18 @@ bugreports:
     Нажатие кнопки "X" закрывает окно "Заказ успешно формлен"/"Order placed successfully"
   actual-result: |
     Окно "Заказ успешно оформлен"/"Order placed successfully" не реагирует на нажатие кнопки "Х"
+
+- summary: |
+    При оформлении заказа возникает ошибка 500
+  environment: |
+    - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    - Windows 11 Pro Версия 21H2 сборка ОС 22000.2538
+    - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+  steps-to-reproduce: |
+    1. Добавить любой товар в корзину
+    2. Перейти в корзину
+    3. Оформить заказ
+  expected-result: |
+    Успешное оформление заказа
+  actual-result: |
+    В консоли DevTools выводится ошибка 500 (failed to load resource)
