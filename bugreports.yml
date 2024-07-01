@@ -1,48 +1,32 @@
 ---
 - summary: |
-    Некорректное отображение кнопки "English" при выборе языка сайта
+    Не отображается флаг английского языка в языковом меню
   environment: |
     - https://hexlet-products-store.vercel.app/
     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
   steps-to-reproduce: |
-    1. Открыть страницу https://hexlet-products-store.vercel.app/
-    2. Нажать на кнопку "Language"
+    1. Нажать на кнопку "Language"
   expected-result: |
     В выпадающем списке "Язык"/"Language" отображены кнопки "Русский" и "English" с флагами стран
   actual-result: |
-    В выпадающем списке "Язык"/"Language" кнопки "Russian" и "English", на кнопке "English" некорректно отображается изображение
+    В выпадающем списке "Язык"/"Language" не отображается флаг английского языка
 
 - summary: |
-    Не работает кнопка "Х" в окне заказа
+    Не закрывается окно в окне заказа при клике на "Х"
   environment: |
     - https://hexlet-products-store.vercel.app/
     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
   steps-to-reproduce: |
-    1. Открыть страницу https://hexlet-products-store.vercel.app/
-    2. Добавить любой товар в корзину.
-    3. Перейти в корзину.
-    4. Нажать "Оформить заказ" / "Checkout"
-    3. Нажать кнопку "X"
+    1. Добавить любой товар в корзину.
+    2. Перейти в корзину.
+    3. Нажать "Оформить заказ" / "Checkout"
+    4. Нажать кнопку "X"
   expected-result: |
     Нажатие кнопки "X" закрывает окно "Заказ успешно формлен"/"Order placed successfully"
   actual-result: |
     Окно "Заказ успешно оформлен"/"Order placed successfully" не реагирует на нажатие кнопки "Х"
-
-- summary: |
-    Отсутствует уведомление о добавлении товара в корзину
-  environment: |
-    - https://hexlet-products-store.vercel.app/
-    - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
-    - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
-  steps-to-reproduce: |
-    - Открыть страницу https://hexlet-products-store.vercel.app/
-    - Добавить в корзину любой товар, к примеру "Chanel Coco Noir Eau De"
-  expected-result: |
-    Отображается уведомление о добавлении товара "Chanel Coco Noir Eau De" в корзину
-  actual-result: |
-    Уведомления о добавлении товара в корзину нет, появляется счётчик с цифрой "1" над кнопкой "Корзина"
 
 - summary: |
     При вводе отрицательного значения в фильтр цены не происходит исправление
@@ -51,7 +35,6 @@
     - Windows 11 Pro Версия 21H2 сборка ОС 22000.2538
     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
   steps-to-reproduce: |
-    1. Открыть страницу https://hexlet-products-store.vercel.app/
     1. Ввести в поле "От"/"From" значение "-50"
     2. Ввести в поле "До"/"To" значение "-1000"
   expected-result: |
@@ -59,3 +42,18 @@
     Значение в поле "От"/"From" исправляется на "50", в поле "До"/"To" исправляется на "1000"
   actual-result: |
     На странице отображена надпись "Ничего не найдено!"/"Nothing found!"
+
+- summary: |
+    При оформлении заказа возникает ошибка 500
+  environment: |
+    - https://hexlet-products-store.vercel.app/
+    - Windows 11 Pro Версия 21H2 сборка ОС 22000.2538
+    - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+  steps-to-reproduce: |
+    1. Добавить любой товар в корзину
+    2. Перейти в корзину
+    3. Оформить заказ
+  expected-result: |
+    Успешное оформление заказа
+  actual-result: |
+    В консоли DevTools выводится ошибка 500 (failed to load resource)
