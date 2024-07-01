@@ -1,24 +1,24 @@
 ---
 - summary: |
-    Проверка возможности просмотра содержимого корзины
+    Проверка добавления товара в корзину
   requirement: |
-    При нажатии на вкладку Корзина открывается список товаров, добавленных в корзину
+    При добавлении товарав корзину и переходе в корзину открывается список товаров, добавленных в корзину
   prerequisites: |
-    Открыть страницу https://hexlet-products-store.vercel.app/
+    no-data
   test-data: |
     no-data
   steps:
-    - На карточке товара Cat Food нажать кнопку "В корзину"
-    - Нажать "Корзина" для просмотра содержимого корзины
+    - Добавить в корзину любой товар из каталога, к примеру "Cat Food"
+    - Перейти в корзину
   expected-result: |
-    В списве товаров должен быть добавленный товар Cat Food
+    Товар успешно добавлен и отображается в корзине
     
 - summary: |
    Проверка открытия карточки товара
   requirement: |
    При открытии страницы товара открывается описание товара
   prerequisites:
-   Открыть страницу https://hexlet-products-store.vercel.app/
+   no-data
   test-data: |
    no-data
   steps:
@@ -31,7 +31,7 @@
   requirement: |
    При настройке фильтров категории товаров отображаются товары соответствующей категории
   prerequisites:
-   Открыть страницу https://hexlet-products-store.vercel.app/
+   no-data
   test-data: |
    no-data
   steps:
@@ -40,11 +40,11 @@
    На странице отображаются товары выбранной категории "groceries"
 
 - summary: |
-   Проверка работы фильтра при выборе бренда другой категории товара
+   Проверка сортировки по категории которая не соотвествует бренду
   requirement: |
    После выбора бренда другой категории товара появляется надпись "Ничего не найдено!"
   prerequisites:
-   Открыть страницу https://hexlet-products-store.vercel.app/
+   no-data
   test-data: |
    no-data
   steps:
@@ -58,7 +58,7 @@
   requirement: |
    После добавления товара в корзину есть возможность удалить из корзины все товары
   prerequisites:
-   Открыть страницу https://hexlet-products-store.vercel.app/
+   no-data
   test-data: |
    no-data
   steps:
@@ -73,7 +73,7 @@
   requirement: |
    Сайт открывается в разных браузерах
   prerequisites:
-   Открыть страницу https://hexlet-products-store.vercel.app/
+   no-data
   test-data: |
    no-data
   steps:
@@ -84,11 +84,11 @@
    Сайт открывается в разных браузерах
   
 - summary: |
-   Проверка смены английского языка на русский на странице интернет-магазина
+   Проверка русской локализации
   requirement: |
    Интерфейс и данные товара отображаются на русском языке
   prerequisites:
-   Открыть страницу https://hexlet-products-store.vercel.app/
+   no-data
   test-data: |
    no-data
   steps:
@@ -98,11 +98,11 @@
    Весь интерфейс сайта отображается на русском языке
    
 - summary: |
-   Проверка возможности удаления лишнего товара из корзины
+   Проверка удаления товара из корзины
   requirement: |
    После добавления товара в корзину есть возможность удалить из корзины лишний товар
   prerequisites:
-   Открыть страницу https://hexlet-products-store.vercel.app/
+   no-data
   test-data: |
    no-data
   steps:
@@ -117,7 +117,7 @@
   requirement: |
     Фильтрация товаров по ключевым словам из описания
   prerequisites: |
-    Открыть страницу (https://hexlet-products-store.vercel.app/)
+    no-data
   test-data: |
     no-data
   steps:
