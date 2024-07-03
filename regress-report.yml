@@ -39,25 +39,25 @@ bugreports:
   - summary: |
       При поиске по словам из описания товара отображается весь каталог
     environment: |
-    - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
-    - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
+     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
-    1. В поисковой строке ввести слова, не имеющие отношения к названию товара, к примеру "Sweet and juicy"
-    expected-result: |
+     - В поисковой строке ввести слова, не имеющие отношения к названию товара, к примеру "Sweet and juicy"
+     expected-result: |
       Отображается товар, содержащий в описании указанные слова, к примеру "Mulberry"
-    actual-result: |
+      actual-result: |
       На странице отображается весь каталог товаров
 
   - summary: |
       При выборе категории и выборе бренда другой категории отображается весь каталог
     environment: |
-    - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
-    - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
+     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
-    1. Выбрать любую категорию товара, к примеру "beauty"
-    2. Выбрать любой бренд другой категории товаров, к примеру "Knoll"
+     - Выбрать любую категорию товара, к примеру "beauty"
+     - Выбрать любой бренд другой категории товаров, к примеру "Knoll"
     expected-result: |
       Появляется надпись "Ничего не найдено!"/"Nothing found!"
     actual-result: |
@@ -66,13 +66,13 @@ bugreports:
   - summary: |
       При отмене фильтра по категории не работает фильтр по бренду
     environment: |
-    - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
-    - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
+     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
-    1. Выбрать любую категорию, к примеру "fragrances"
-    2. Выбрать любой бренд из соответствующей категории, к примеру "Dior"
-    3. Выбрать вариант "без категории"
+     - Выбрать любую категорию, к примеру "fragrances"
+     - Выбрать любой бренд из соответствующей категории, к примеру "Dior"
+     - Выбрать вариант "без категории"
     expected-result: |
       При выборе варианта "без категории" должен отображаться товар выбранного бренда, при переключении на другой бренд должны отображаться товары соответствующего бренда
     actual-result: |
@@ -81,11 +81,11 @@ bugreports:
   - summary: |
       В цифровом поле "До"/"To" есть возможность установить отрицательное значение
     environment: |
-    - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
-    - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
+     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
-    1. В цифровом поле "До"/"To" зажать стрелку "вниз", к примеру, до значения "-50"
+     - В цифровом поле "До"/"To" зажать стрелку "вниз", к примеру, до значения "-50"
     expected-result: |
       Значение не должно опускаться ниже нуля
     actual-result: |
@@ -94,46 +94,46 @@ bugreports:
   - summary: |
       При отмене фильтра по категории не работает фильтр по цене
     environment: |
-    - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
-    - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
+     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
-    1. Выбрать любую категорию, к примеру "beauty"
-    2. Указать цену в поле "До"/"To", к примеру "20"
-    3. Выбрать вариант "без категории"
+     - Выбрать любую категорию, к примеру "beauty"
+     - Указать цену в поле "До"/"To", к примеру "20"
+     - Выбрать вариант "без категории"
     expected-result: |
       При выборе варианта "без категории" должен отображаться товар с ценой до указанной суммы
     actual-result: |
       Отображается полный каталог товара, при выборе иной цены ничего не происходит
       Решается перезагрузкой страницы
 
-- summary: |
-    Не закрывается окно в окне заказа при клике на "Х"
-  environment: |
-    - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
-    - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
-  steps-to-reproduce: |
-    2. Добавить любой товар в корзину
-    3. Перейти в корзину
-    4. Нажать "Оформить заказ" / "Checkout"
-    3. Нажать кнопку "X"
-  expected-result: |
-    Нажатие кнопки "X" закрывает окно "Заказ успешно формлен"/"Order placed successfully"
-  actual-result: |
-    Окно "Заказ успешно оформлен"/"Order placed successfully" не реагирует на нажатие кнопки "Х"
+  - summary: |
+     Не закрывается окно в окне заказа при клике на "Х"
+    environment: |
+     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
+     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+    steps-to-reproduce: |
+     - Добавить любой товар в корзину
+     - Перейти в корзину
+     - Нажать "Оформить заказ" / "Checkout"
+     - Нажать кнопку "X"
+    expected-result: |
+     Нажатие кнопки "X" закрывает окно "Заказ успешно формлен"/"Order placed successfully"
+    actual-result: |
+     Окно "Заказ успешно оформлен"/"Order placed successfully" не реагирует на нажатие кнопки "Х"
 
-- summary: |
-    При оформлении заказа возникает ошибка 500
-  environment: |
-    - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    - Windows 11 Pro Версия 21H2 сборка ОС 22000.2538
-    - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
-  steps-to-reproduce: |
-    1. Добавить любой товар в корзину
-    2. Перейти в корзину
-    3. Оформить заказ
-  expected-result: |
-    Успешное оформление заказа
-  actual-result: |
-    В консоли DevTools выводится ошибка 500 (failed to load resource)
+  - summary: |
+     При оформлении заказа возникает ошибка 500
+    environment: |
+     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+     - Windows 11 Pro Версия 21H2 сборка ОС 22000.2538
+     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+    steps-to-reproduce: |
+     - Добавить любой товар в корзину
+     - Перейти в корзину
+     - Оформить заказ
+    expected-result: |
+     Успешное оформление заказа
+    actual-result: |
+     В консоли DevTools выводится ошибка 500 (failed to load resource)
