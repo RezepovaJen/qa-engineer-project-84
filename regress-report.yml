@@ -44,9 +44,9 @@ bugreports:
      Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
      - В поисковой строке ввести слова, не имеющие отношения к названию товара, к примеру "Sweet and juicy"
-     expected-result: |
+    expected-result: |
       Отображается товар, содержащий в описании указанные слова, к примеру "Mulberry"
-      actual-result: |
+    actual-result: |
       На странице отображается весь каталог товаров
 
   - summary: |
