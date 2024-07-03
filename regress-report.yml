@@ -39,9 +39,9 @@ bugreports:
   - summary: |
       При поиске по словам из описания товара отображается весь каталог
     environment: |
-     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
-     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+     https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+     Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
+     Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
      - В поисковой строке ввести слова, не имеющие отношения к названию товара, к примеру "Sweet and juicy"
      expected-result: |
@@ -52,9 +52,9 @@ bugreports:
   - summary: |
       При выборе категории и выборе бренда другой категории отображается весь каталог
     environment: |
-     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
-     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+     https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+     Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
+     Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
      - Выбрать любую категорию товара, к примеру "beauty"
      - Выбрать любой бренд другой категории товаров, к примеру "Knoll"
@@ -66,9 +66,9 @@ bugreports:
   - summary: |
       При отмене фильтра по категории не работает фильтр по бренду
     environment: |
-     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
-     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+     https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+     Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
+     Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
      - Выбрать любую категорию, к примеру "fragrances"
      - Выбрать любой бренд из соответствующей категории, к примеру "Dior"
@@ -81,9 +81,9 @@ bugreports:
   - summary: |
       В цифровом поле "До"/"To" есть возможность установить отрицательное значение
     environment: |
-     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
-     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+     https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+     Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
+     Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
      - В цифровом поле "До"/"To" зажать стрелку "вниз", к примеру, до значения "-50"
     expected-result: |
@@ -94,9 +94,9 @@ bugreports:
   - summary: |
       При отмене фильтра по категории не работает фильтр по цене
     environment: |
-     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
-     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+     https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+     Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
+     Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
      - Выбрать любую категорию, к примеру "beauty"
      - Указать цену в поле "До"/"To", к примеру "20"
@@ -110,9 +110,9 @@ bugreports:
   - summary: |
      Не закрывается окно в окне заказа при клике на "Х"
     environment: |
-     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-     - Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
-     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+     https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+     Windows 11 Pro Версия 21H2 (сборка ОС 22000.2538)
+     Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
      - Добавить любой товар в корзину
      - Перейти в корзину
@@ -126,9 +126,9 @@ bugreports:
   - summary: |
      При оформлении заказа возникает ошибка 500
     environment: |
-     - https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-     - Windows 11 Pro Версия 21H2 сборка ОС 22000.2538
-     - Яндекс Браузер Версия 24.4.4.1168 (64-bit)
+     https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+     Windows 11 Pro Версия 21H2 сборка ОС 22000.2538
+     Яндекс Браузер Версия 24.4.4.1168 (64-bit)
     steps-to-reproduce: |
      - Добавить любой товар в корзину
      - Перейти в корзину
